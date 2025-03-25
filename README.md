@@ -33,7 +33,7 @@ app/
         ├── Views/
         │   └── index.blade.php
         ├── Database/
-        │   ├── Migrations/
+        │   └── Migrations/
         │       └── 2021_01_01_000000_create_example_table.php
         ├── Controllers/
         │   └── YourModuleController.php
