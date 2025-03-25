@@ -1,8 +1,8 @@
 <?php
 
-namespace Database\Factories;
+namespace App\Code\SampleModule\Database\Factories;
 
-use App\Models\SampleModuleTabela;
+use App\Code\SampleModule\Models\MyModel;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ExampleFactory extends Factory
@@ -10,7 +10,7 @@ class ExampleFactory extends Factory
     /**
      * @var string
      */
-    protected $model = SampleModuleTabela::class;
+    protected $model = MyModel::class;
 
     /**
      * @return array

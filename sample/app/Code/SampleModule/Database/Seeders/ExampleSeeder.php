@@ -1,9 +1,9 @@
 <?php
 
-namespace Database\Seeders;
+namespace App\Code\SampleModule\Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\SampleModuleTabela;
+use App\Code\SampleModule\Models\MyModel;
 
 class ExampleSeeder extends Seeder
 {
@@ -12,6 +12,6 @@ class ExampleSeeder extends Seeder
      */
     public function run()
     {
-        SampleModuleTabela::factory()->count(10)->create();
+        MyModel::factory()->count(10)->create();
     }
 }

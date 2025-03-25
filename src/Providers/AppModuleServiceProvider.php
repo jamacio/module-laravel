@@ -106,10 +106,5 @@ class AppModuleServiceProvider extends ServiceProvider
                 require_once $seederFile;
             }
         }
-
-        $factoriesPath = $moduleDir . '/Database/Factories';
-        if (is_dir($factoriesPath)) {
-            \Illuminate\Database\Eloquent\Factories\Factory::load($factoriesPath);
-        }
     }
 }
