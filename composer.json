@@ -1,0 +1,20 @@
+{
+  "name": "jamacio/module-laravel",
+  "description": "Laravel module with auto-discovery support. Organize all Laravel main folders in a single module for easier maintenance and discovery.",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "App\\Providers\\": "src/Providers/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "App\\Providers\\AppModuleServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "require": {}
+}
