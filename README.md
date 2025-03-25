@@ -1,3 +1,11 @@
+# Installation via Composer
+
+Use the command below to install the package via Composer. After installation, follow the steps to create modules in the `app/Code/YourModuleName` folder:
+
+```bash
+composer require jamacio/module-laravel
+```
+
 # Module Laravel
 
 **Module Laravel** is a package designed to streamline Laravel's core folder structure by consolidating Routes, Views and Migrations into a single module folder. This approach simplifies maintenance and improves discoverability for modular applications.
