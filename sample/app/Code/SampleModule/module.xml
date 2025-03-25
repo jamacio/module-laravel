@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<config>
+    <module name="SampleModule"/>
+    <sequence>
+        <module name="SampleModuleOld"/>
+    </sequence>
+</config>
