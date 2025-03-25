@@ -99,5 +99,17 @@ class AppModuleServiceProvider extends ServiceProvider
         if (is_dir($migrationsPath)) {
             $this->loadMigrationsFrom($migrationsPath);
         }
+
+        $seedersPath = $moduleDir . '/Database/Seeders';
+        if (is_dir($seedersPath)) {
+            foreach (glob($seedersPath . '/*.php') as $seederFile) {
+                require_once $seederFile;
+            }
+        }
+
+        $factoriesPath = $moduleDir . '/Database/Factories';
+        if (is_dir($factoriesPath)) {
+            \Illuminate\Database\Eloquent\Factories\Factory::load($factoriesPath);
+        }
     }
 }
