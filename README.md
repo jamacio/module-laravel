@@ -1,6 +1,6 @@
 # Module Laravel
 
-**Module Laravel** is a package designed to streamline Laravel's core folder structure by consolidating Routes, Views, Migrations, Seeders, and Factories into a single module folder. This approach simplifies maintenance and improves discoverability for modular applications.
+**Module Laravel** is a package designed to streamline Laravel's core folder structure by consolidating Routes, Views and Migrations into a single module folder. This approach simplifies maintenance and improves discoverability for modular applications.
 
 ## Overview
 
@@ -12,11 +12,11 @@ In traditional Laravel applications, core folders are distributed across multipl
 
 ## Features
 
-- **Organized Folder Structure:** Groups Routes, Views, Migrations, Seeders, and Factories into a single module folder.
+- **Organized Folder Structure:** Groups Routes, Views and Migrations into a single module folder.
 - **Auto-Discovery:** Utilizes Laravel’s auto-discovery to register service providers without manual configuration.
 - **Dependency Management:** Supports module dependency ordering through an XML configuration file (`module.xml`).
 - **Modular Routing and Views:** Allows module-specific routes and views to override or extend default Laravel functionality.
-- **Dynamic Resource Loading:** Automatically loads migrations, seeders, and factories for each module.
+- **Dynamic Resource Loading:** Automatically loads migrations for each module.
 
 ## Folder Structure
 
@@ -34,11 +34,7 @@ app/
         │   └── index.blade.php
         ├── Database/
         │   ├── Migrations/
-        │   │   └── 2021_01_01_000000_create_example_table.php
-        │   ├── Seeders/
-        │   │   └── ExampleSeeder.php
-        │   └── Factories/
-        │       └── ExampleFactory.php
+        │       └── 2021_01_01_000000_create_example_table.php
         ├── Controllers/
         │   └── YourModuleController.php
 ```
@@ -48,7 +44,7 @@ This structure organizes all module-specific assets under a single folder, simpl
 - **module.xml:** Contains metadata and dependencies for the module.
 - **Routes:** Includes route files (`web.php` and `api.php`) for module-specific routes.
 - **Views:** Stores Blade templates for the module.
-- **Database:** Contains subfolders for migrations, seeders, and factories to handle database-related tasks.
+- **Database:** Contains subfolders for migrations.
 - **Controllers:** Houses controllers for managing HTTP requests.
 
 ## Module Configuration
